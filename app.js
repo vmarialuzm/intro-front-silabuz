@@ -158,3 +158,4 @@ user1["direccion"] = "Av. siempre viva"
 
 console.log(user1)
 console.log(`Hola mi nombre es ${user1.nombre} ${user1.apellido}, y tengo ${user1.edad} años`)
+
