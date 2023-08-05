@@ -58,7 +58,7 @@ const listaProfes = document.querySelector(".lista-profes");
 //vamos a crear una lista
 const ul = document.createElement("ul");
 
-profesores.map((profesor) => {
+profesores.filter((profesor) => profesor.nombre.startsWith("M")).map((profesor) => {
     const li = document.createElement("li");
     li.textContent = profesor.nombre;
     li.innerHTML += `
