@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="./forms-sweetAlert.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+    <main>
+      <h1>Home page</h1>
+      <form action="" id="form">
+        <input type="text" name="name" placeholder="Ingrese su nombre" />
+        <input type="email" name="email" placeholder="Ingrese su correo" />
+        <input
+          type="password"
+          name="password"
+          placeholder="Ingrese su password"
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.21/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
