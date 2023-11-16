@@ -6,3 +6,13 @@ for i in listaNumeros:
     if i == elementoPorUsuario:
         contador+=1
 print(contador)
+
+""" 2da forma """
+
+my_list = [i for i in listaNumeros if i == elementoPorUsuario]
+print(len(my_list))
+
+""" 3ra forma """
+
+my_list2 = filter(lambda x: x == elementoPorUsuario, listaNumeros)
+print(len(my_list))
