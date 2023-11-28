@@ -12,7 +12,7 @@ form.onsubmit = async function (event) {
     inputs.forEach((input) => (body[input.name] = input.value));
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/api/v1/todo/", {
+        const response = await fetch("http://127.0.0.1:8000/v3/todo3/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -25,6 +25,7 @@ form.onsubmit = async function (event) {
             text: "Tarea creada",
             icon: "success",
         });
+        location.href = "/todo";
     } catch (error){
         Swal.fire({
             text: error,
